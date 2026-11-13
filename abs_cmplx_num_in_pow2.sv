@@ -24,7 +24,7 @@ parameter DATA_WIDTH = 16
     );
     reg [1:0]valid_del; 
     reg [DATA_WIDTH*2-1:0] data_re_pow2;
-    reg [DATA_WIDTH*2-1:0]data_im_pow2;
+    reg [DATA_WIDTH*2-1:0] data_im_pow2;
     
     assign VALID_OUT = valid_del[1];
     always @(posedge CLK)
